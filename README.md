@@ -1,6 +1,6 @@
 # Ag/MoS₂/p-Si/Al MIS Schottky Diode — Analytical Dark I-V Model
 
-Analytical dark current-voltage model of a metal-insulator-semiconductor (MIS) Schottky diode with an ultrathin MoS₂ interfacial layer, written as part of my MSc thesis work (experimental PVD fabrication + numerical simulation of the same structure).
+Analytical dark current-voltage model of a metal-insulator-semiconductor (MIS) Schottky diode with an ultrathin MoS₂ interfacial layer, written as an exploratory study during my MSc research on semiconductor devices.
 
 ![Parameter sweeps: barrier height, MoS2 thickness, ideality factor](docs/analytical_iv.png)
 
@@ -16,7 +16,7 @@ The script sweeps barrier height (0.60-0.91 eV), MoS₂ thickness (0-3 nm, where
 
 ## Validity limit (why numerical simulation is still needed)
 
-The tunnel-MIS picture only holds for δ ≲ 3 nm. For thicker MoS₂ films, transport crosses over to a heterojunction / drift-diffusion regime where this analytical model breaks down — that regime is handled in the thesis with a numerical device simulator (SCAPS-1D). This script exists to map the ultrathin regime and to justify that transition quantitatively.
+The tunnel-MIS picture only holds for δ ≲ 3 nm. For thicker MoS₂ films, transport crosses over to a heterojunction / drift-diffusion regime where this analytical model breaks down — that regime requires a numerical device simulator (e.g. SCAPS-1D). This script exists to map the ultrathin regime and to justify that transition quantitatively.
 
 ## Usage
 
